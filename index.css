@@ -1,0 +1,115 @@
+body {
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(0deg, #538ee0, #1d34b7);
+	position: relative;
+}
+.stars {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.stars div {
+	width: 20px;
+	/* animation-name: bling;
+	animation-duration: 3s;
+	animation-iteration-count: infinite; */
+	animation: bling 3s infinite;
+}
+@keyframes bling {
+	50% {
+		font-size: 24px;
+		text-shadow: 0 0 15px rgba(249, 194, 60, 1);
+	}
+}
+.🚀 {
+	margin-top: 0;
+	transform: translate(25px);
+}
+header {
+	width: 0;
+	border: 100px solid transparent;
+	border-bottom: 100px solid #c7c6b6;
+	transform: scale(1, 2) translate(0, -50px);
+}
+main {
+	width: 100px;
+	height: 300px;
+	background-color: orange;
+	transform: translate(50px);
+}
+main .circle {
+	width: 40px;
+	height: 40px;
+	background-color: #fff;
+	border-radius: 50%;
+	border: 5px solid #ee7959;
+	transform: translate(50%, 50%);
+
+	margin-bottom: 15px;
+	text-align: center;
+	line-height: 40px;
+	color: red;
+}
+footer {
+	width: 100px;
+	height: 100px;
+	border: 100px solid transparent;
+	border-bottom: 100px solid #c7c6b6;
+	/* transform: translate(-50px, -200px); */
+	margin-top: -200px;
+	margin-left: -50px;
+}
+
+.fire {
+	transform: translate(7px);
+}
+
+.fire .container {
+	transform: scale(0.7, 1);
+	float: left;
+	margin-top: 20px;
+	margin-right: 25px;
+}
+.fire .container div {
+	width: 40px;
+	height: 40px;
+	background-color: #ffee6f;
+	border: 3px solid white;
+
+	box-shadow: 0 0 20px #ecd452;
+	transform: rotate(45deg);
+	animation: firebling 1s infinite;
+}
+
+@keyframes firebling {
+	50% {
+		transform: rotate(45deg) scale(0.7);
+		background-color: #ecd452;
+	}
+}
+
+.controls {
+	position: absolute;
+	bottom: 0px;
+}
+
+.controls p {
+	border: 2px solid #c12c1f;
+	padding: 3px 8px;
+	border-radius: 5px;
+	color: #333;
+	background-color: #f1c40f;
+	cursor: pointer;
+}
+.controls p span {
+	display: block;
+	transform: skew(-15deg);
+}
