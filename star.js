@@ -1,3 +1,4 @@
+// 随机星星
 let stars = document.querySelector('.stars');
 for (let i = 0; i < 30; i++) {
 	const div = document.createElement('div');
