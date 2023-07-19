@@ -26,12 +26,13 @@ body {
 @keyframes bling {
 	50% {
 		font-size: 24px;
-		text-shadow: 0 0 15px rgba(249, 194, 60, 1);
+		text-shadow: -5px 5px 15px rgba(249, 194, 60, 1);
 	}
 }
 .🚀 {
 	margin-top: 0;
 	transform: translate(25px);
+	filter: drop-shadow(0px 0px 5px #fff);
 }
 header {
 	width: 0;
