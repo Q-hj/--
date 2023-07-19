@@ -114,3 +114,9 @@ footer {
 	display: block;
 	transform: skew(-15deg);
 }
+
+@media (max-width: 500px) {
+	.🚀 {
+		transform: translate(25px) scale(0.8);
+	}
+}
